@@ -6,8 +6,10 @@ def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
     if not roman_string.isupper():
-        return 0
+        return 0 
+
     # Dictionary for roman numerals
+  
     r_dict = {
         "I": 1,
         "IV": 4,
@@ -22,7 +24,9 @@ def roman_to_int(roman_string):
 
     result = 0
     temp = list(roman_string)
+    
     # Concat 4 and 9s
+    
     if len(temp) > 1:
         idx = 0
         for i in temp:
