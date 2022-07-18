@@ -8,4 +8,4 @@ def safe_function(fct, *args):
     except Exception as e:
         tb.print_exception(Exception, Exception(e), None)
         result = None
-    return 
+    return None
