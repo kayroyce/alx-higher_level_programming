@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 class Square:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 132b12dece8a5f5e556cdb3f430c066fd12d5de2
     """Class defining square"""
     def __init__(self, size=0):
         if type(size) is not int:
