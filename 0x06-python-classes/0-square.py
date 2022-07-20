@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 class Square:
+    """Class pass"""
     def __int__(self):
         pass
 
