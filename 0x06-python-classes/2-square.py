@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 
-class Square:
-<<<<<<< HEAD
+"""Define a class Square"""
 
-=======
->>>>>>> 132b12dece8a5f5e556cdb3f430c066fd12d5de2
-    """Class defining square"""
+
+class Square:
+    """Square Class"""
     def __init__(self, size=0):
+        """Class instance"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
 
 if __name__ == "__main__":
     Square()
