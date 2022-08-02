@@ -3,12 +3,12 @@
 `add_item.json`. File contains a json serialized list of all strings
 entered as arguments to the program.
 Example:
-    $ ./9-add_item.py Holberton School
+    $ ./9-add_item.py Best School
     $ cat add_item.json ; echo
-    ["Holberton", "School"]
+    ["Best", "School"]
     $ ./9-add_item.py Python 89 C
     $ cat add_item.json ; echo
-    ["Holberton", "School", "Python", "89", "C"]
+    ["Best", "School", "Python", "89", "C"]
 """
 
 if __name__ == "__main__":
