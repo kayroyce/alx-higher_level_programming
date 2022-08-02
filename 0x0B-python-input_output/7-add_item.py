@@ -6,9 +6,9 @@ Example:
     $ ./9-add_item.py Best School
     $ cat add_item.json ; echo
     ["Best", "School"]
-    $ ./9-add_item.py Python 89 C
+    $ ./9-add_item.py 89 Python C
     $ cat add_item.json ; echo
-    ["Best", "School", "Python", "89", "C"]
+    ["Best", "School", "89", "Python", "C"]
 """
 
 if __name__ == "__main__":
