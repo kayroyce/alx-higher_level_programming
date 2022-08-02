@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""Module that implements MyList class"""
+"""
+Contains class MyList
+inherits from list; has public instance method to print sorted
+"""
 
 
 class MyList(list):
-    """MyList class extends lists to include print_sorted method"""
+    """inherits from list
+    methods:
+    print_sorted(self)
+    """
     def print_sorted(self):
-        """Prints list elements in sorted order"""
+        """prints list of ints all sorted in ascending order"""
         print(sorted(self))
