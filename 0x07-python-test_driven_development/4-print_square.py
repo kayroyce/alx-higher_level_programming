@@ -1,23 +1,24 @@
 #!/usr/bin/python3
-"""
-Defines a function that square with the character #.
+"""Module containing function to print a square
+Should not be executed directly, but only imported as a module
 """
 
 
 def print_square(size):
+    """Function to print a square with sides `size`.
+    Args:
+        size (int): Integral side length of square
+    Returns: None
+    Raises:
+        TypeError: If `size` is not an integer.
+        ValueError: If `size` is less than 0.
     """
-    Prints square with #'s given int size
-    """
-    if type(size) is not int:
-        raise TypeError("size must be an integer")
-    if type(size) is float and size < 0:
-        raise TypeError("size must be an integer")
+    if type(size) is not float and type(size) is not int:
+        raise TypeError('size must be an integer')
+    if type(size) is float and size != round(size):
+        raise TypeError('size must be an integer')
     if size < 0:
-        raise ValueError("size must be >= 0")
+        raise ValueError('size must be >= 0')
 
-    if size == 0:
-        print("", end="")
-    else:
-        for rows in range(size):
-            [print("#", end="") for i in range(size)]
-            print("")
+    for i in range(round(size)):
+        print("#" * round(size))

@@ -1,18 +1,24 @@
 #!/usr/bin/python3
-"""
-A function that prints text with 2 new lines after each ".", "?", and ":"
+"""Module containing function to print strings by line
+Contains no directly executable code. Should be imported
+as a module.
 """
 
 
 def text_indentation(text):
+    """Function to print text double-spaced, using `.?:` as
+    line separators.
+    Args:
+        text (str): String to print
+    Returns: None.
+    Raises:
+        TypeError: If `text` not a string.
     """
-    Prints text with 2 new lines after each ".", "?", and ":"
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    for char in ".?:":
-        text = text.replace(char, char + "\n\n")
-    list_lines = [lines.strip(' ') for lines in text.split('\n')]
-    revised = "\n".join(list_lines)
-    print(revised, end="")
+    delims = '.:?'
+    if type(text) is not str:
+        raise TypeError('text must be a string')
+    for c in delims:
+        text = str(c + '\n\n').join(s.strip() for s in text.split(c))
+    print(text, end='')
+    if len(text) > 0 and text[-1] in delims:
+        print('\n')
