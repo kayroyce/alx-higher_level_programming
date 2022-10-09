@@ -8,4 +8,8 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
+<<<<<<< HEAD
 SHOW DATABASES;
+=======
+show DATABASE;
+>>>>>>> 0b9fe86ea6ac23bdb5d744a62231b1ca22b12280

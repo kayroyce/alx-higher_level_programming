@@ -13,6 +13,13 @@ if __name__ == "__main__":
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states")
     rows = cursor.fetchall()
+<<<<<<< HEAD
 
     for row in rows:
         print(row)
+=======
+    
+    for row in rows:
+            print(row)
+    
+>>>>>>> 0b9fe86ea6ac23bdb5d744a62231b1ca22b12280
