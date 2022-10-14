@@ -8,8 +8,7 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                         passwd=argv[2], db=argv[3], charset="utf8")
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3])
     
     with db.cursor() as cur:
 <<<<<<< HEAD
@@ -31,5 +30,8 @@ if __name__ == "__main__":
         print(row)
 =======
         print(row)
+<<<<<<< HEAD
 
 >>>>>>> 3db0ac7e614545e2ff400d2b4973fa913161cb7d
+=======
+>>>>>>> 1820da226919c0aaeb6db8584fb9035744d6902d
