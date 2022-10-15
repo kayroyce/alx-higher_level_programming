@@ -18,6 +18,8 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states")
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    #for row in rows:
+    #    print(row)
     
+    # another way to rewrite turple
+    [print(state) for state in cur.fetchall()]
