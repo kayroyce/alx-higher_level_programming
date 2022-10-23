@@ -16,5 +16,8 @@ if __name__ == "__main__":
                  
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    #for row in rows:
+    #    print(row)
+
+    # Another way to do it
+    [print(state) for state in cur.fetchall() if state[1][0] == "N"]
